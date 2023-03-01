@@ -1,0 +1,14 @@
+CREATE PROCEDURE clearAllTables
+AS
+DELETE FROM Stadium
+DELETE FROM Match
+DELETE FROM StadiumManager
+DELETE FROM SystemAdmin
+DELETE FROM AssociationManager
+DELETE FROM ClubRepresentative
+DELETE FROM ClubStadiumRequest
+DELETE FROM Ticket
+DELETE FROM Fan
+DELETE FROM Club
+DELETE FROM TicketFan
+DELETE FROM SystemUser
