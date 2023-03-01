@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "insideSAM";
+}
+
+<h2>Sports Association Manager</h2>
+
+<div>
+    @Html.ActionLink("ADD match", "Creatematch", "Match")
+</div>
+<div>
+    @Html.ActionLink("Delete match", "Deletematch", "Match")
+</div>
+
+<div>
+    @Html.ActionLink("View All Upcoming Matches", "Alreadyplayed", "Match")
+</div>
+
+<div>
+    @Html.ActionLink("View Already Played Matches", "Upcoming", "Match")
+</div>
+<div>
+    @Html.ActionLink("View Pair of club names who never scheduled to play aganist eachother", "getClubsNevermatchView", "ClubsNeverMatched")
+</div>
+<br />
+<br />
+<br />
+<br />
+<div>
+    @Html.ActionLink("Back to Admin", "Index", "base")
+</div>

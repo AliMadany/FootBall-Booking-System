@@ -1,0 +1,32 @@
+﻿@model IEnumerable<M3gogo.Models.clubsNeverMatched>
+
+<p>
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Host)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Host)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Guest)
+            </td>
+
+        </tr>
+    }
+    <div>
+        @Html.ActionLink("BACK", "insideSAM", "base")
+    </div>
+</table>
